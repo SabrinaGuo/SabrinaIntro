@@ -1,19 +1,300 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Sabrina CV</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  </head>
-  <style>
-  
-  
-  </style>
-  <body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<style>
+    @font-face {
+        font-family: 'Sofia-Regular';
+        src: url('font/Sofia-Regular.ttf');
+    }
+
+    .box1 {
+        width: 100%;
+        height: 100vh;
+        background: #001b22 url('images/bg11.jpg') no-repeat center;
+        background-attachment: fixed;
+        background-size: contain;
+    }
+
+    .boxContaine {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .saWord {
+        width: 44%;
+        height: 100%;
+    }
+
+    .saPic {
+        width: 50%;
+        height: 100%;
+    }
+
+    .saWord h2 {
+        font-family: 'Sofia-Regular';
+        color: #fff;
+        font-size: 5.81rem;
+        text-align: right;
+    }
+
+    .saWord h3 {
+        font-family: '微軟正黑體';
+        color: #fff;
+        font-size: 2.25rem;
+        text-align: left;
+        margin: 40% 0 26% 18%;
+        line-height: 4rem;
+    }
+
+    .saWord h4 {
+        font-family: '微軟正黑體';
+        color: #fff;
+        font-size: 3rem;
+        text-align: right;
+        margin: 10% 0px;
+    }
+
+    .intrestGroup {
+        display: flex;
+    }
+
+    .intrestGroup figure {
+        width: 19%;
+        height: 4.1rem;
+        margin: 2%;
+        text-align: center;
+    }
+
+    .intrestGroup figure:hover {
+        transform: translateY(-5px);
+    }
+
+    .intrestGroup figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .intrestGroup figure p {
+        font-family: '微軟正黑體';
+        font-size: 1rem;
+        color: #fff;
+        margin-top: 5%;
+        display: none;
+    }
+
+    .saPic figure {
+        margin: 0;
+        padding: 0;
+    }
+
+    .saPic figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*--box2---*/
+
+    .box2 {
+        width: 100%;
+        height: 100vh;
+        background: url('images/bg12.jpg') no-repeat center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .skillBarArea {
+        width: 50%;
+        height: 100%;
+        /* background: aqua; */
+        margin: 0 0% 0 43%;
+        padding: 2% 0;
+    }
+
+    .bar {
+        position: relative;
+        width: 100%;
+        height: 2rem;
+        border-radius: 5px;
+        background: #b2e2e6;
+        margin: 6% auto;
+        text-align: center;
+        transition: .5s;
+    }
+
+    .preBar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 2rem;
+        border-radius: 5px;
+        background: #468fab;
+        transition: 1.2s ease-out;
+    }
+
+    .bar span {
+        position: absolute;
+        font-size: 1.1rem;
+        top: 7%;
+        left: 1%;
+        color: #fff;
+    }
+
+    .showPercentTriangle {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: .5rem .5rem 0 .5rem;
+        border-color: #468fab transparent transparent transparent;
+        position: absolute;
+        top: -34%;
+        left: 0;
+        transform: rotate(28deg);
+        display: none;
+
+    }
+
+    .showPercent {
+        position: absolute;
+        top: -133%;
+        left: 0%;
+        background: #468fab;
+        color: #fff;
+        width: 2.3rem;
+        height: 2.3rem;
+        border-radius: 50%;
+        padding-top: .3rem;
+        display: none;
+
+    }
+
+    /*--box3---*/
+    .box3 {
+        width: 100%;
+        height: 100vh;
+        background: #001b22 url('images/bg13.jpg') no-repeat center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+
+    /*--box4---*/
+    .box4 {
+        width: 100%;
+        height: 100vh;
+        background: #001b22 url('images/bg14.jpg') no-repeat center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
+
+<body>
+    <div class="box1">
+        <div class="boxContaine">
+            <div class="saWord">
+                <h2>
+                    Sabrina Guo
+                </h2>
+                <h4>郭怡玲</h4>
+                <h3>
+                    希望能用簡單的方式<br>讓使用者感受最大的愉悅
+                </h3>
+                <div class="intrestGroup">
+                    <figure><img src="images/music-player.png" alt="">
+                        <p>喜歡音樂</p>
+                    </figure>
+                    <figure><img src="images/video-player.png" alt="">
+                        <p>喜歡電影</p>
+                    </figure>
+                    <figure><img src="images/open-book.png" alt="">
+                        <p>喜歡閱讀</p>
+                    </figure>
+                    <figure><img src="images/adventurer.png" alt="">
+                        <p>喜歡登山</p>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="box2">
+        <div class="skillBarArea">
+            <div class="bar">
+                <div class="showPercentTriangle"></div>
+                <div class="showPercent">90%</div>
+                <div class="preBar"></div>
+                <span>HTML5</span>
+            </div>
+            <div class="bar">
+                <div class="showPercentTriangle"></div>
+                <div class="showPercent">90%</div>
+                <div class="preBar"></div>
+                <span>CSS3</span>
+            </div>
+            <div class="bar">
+                <div class="showPercentTriangle"></div>
+                <div class="showPercent">85%</div>
+                <div class="preBar"></div>
+                <span>BOOTSTRAP</span>
+            </div>
+            <div class="bar">
+                <div class="showPercentTriangle"></div>
+                <div class="showPercent">90%</div>
+                <div class="preBar"></div>
+                <span>RWD</span>
+            </div>
+            <div class="bar">
+                <div class="showPercentTriangle"></div>
+                <div class="showPercent">70%</div>
+                <div class="preBar"></div>
+                <span>JAVASCRIPT</span>
+            </div>
+            <div class="bar">
+                <div class="showPercentTriangle"></div>
+                <div class="showPercent">75%</div>
+                <div class="preBar"></div>
+                <span>JQUERY</span>
+            </div>
+            <div class="bar">
+                <div class="showPercentTriangle"></div>
+                <div class="showPercent">90%</div>
+                <div class="preBar"></div>
+                <span>PHOTOSHOP</span>
+            </div>
+            <div class="bar">
+                <div class="showPercentTriangle"></div>
+                <div class="showPercent">90%</div>
+                <div class="preBar"></div>
+                <span>ILLUSTRATOR</span>
+            </div>
+            <div class="bar">
+                <div class="showPercentTriangle"></div>
+                <div class="showPercent">90%</div>
+                <div class="preBar"></div>
+                <span>ADOBE XD</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="box3">
+
+    </div>
+    <div class="box4">
+
+    </div>
 
 
 
@@ -24,12 +305,97 @@
 
 
 
-
-      
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+
+
+    <script>
+        //intro
+        var intrestGroupFig = $('.intrestGroup figure');
+        function isMobile() {
+
+            try { document.createEvent("TouchEvent"); return true; }
+
+            catch (e) { return false; }
+
+        }
+        if (isMobile()) {
+            intrestGroupFig.fadeIn();
+            intrestGroupFig.find('p').fadeIn();
+        }
+
+        else {
+            intrestGroupFig.mouseenter(function () {
+                $(this).find('p').fadeIn();
+            });
+            intrestGroupFig.mouseleave(function () {
+                $(this).find('p').fadeOut();
+            });
+
+        }
+
+
+    </script>
+    <script>
+        //skill showPercent
+        var showPercentTriangle = $('.showPercentTriangle');
+        var showPercent = $('.showPercent');
+        function isMobile() {
+
+            try { document.createEvent("TouchEvent"); return true; }
+
+            catch (e) { return false; }
+
+        }
+        if (isMobile()) {
+            showPercentTriangle.fadeIn();
+            showPercent.fadeIn();
+        }
+
+        else {
+            $('.bar').mouseenter(function () {
+
+                $(this).find(showPercentTriangle).fadeIn();
+                $(this).find(showPercent).fadeIn();
+                $(".preBar").each(function () {
+                    var percent = $(this).siblings(".showPercent").text()
+
+                    $(this).siblings(".showPercent").css("left", percent)
+                    $(this).siblings(".showPercentTriangle").css("left", percent)
+                })
+
+            });
+            $('.bar').mouseleave(function () {
+                $(this).find(showPercentTriangle).fadeOut();
+                $(this).find(showPercent).fadeOut();
+            });
+
+        }
+        //skill barRun
+
+        $(window).on("scroll", function () {
+            var scrolltop = $(this).scrollTop()
+            console.log(scrolltop)
+            if (scrolltop > 100) {
+                $(".preBar").each(function () {
+                    var percent = $(this).siblings(".showPercent").text()
+                    $(this).css("width", percent)
+
+                })
+            }
+
+        })
+
+    </script>
+</body>
+
 </html>
