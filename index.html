@@ -429,7 +429,244 @@
 
     /*---RWD---*/
 
-    @media screen and (max-width:375px) {}
+    @media screen and (max-width:375px) {
+
+        .box1 {
+            width: 100%;
+            height: 100vh;
+            background: #001b22;
+            background-attachment: fixed;
+            background-size: contain;
+        }
+
+        .saWord {
+            width: 100%;
+            /* height: 100%; */
+        }
+
+        .saWord h2 {
+            font-family: 'Sofia-Regular';
+            color: #fff;
+            font-size: 3rem;
+            text-align: center;
+            padding-top: 18%;
+        }
+
+        .saWord h4 {
+            font-family: '微軟正黑體';
+            color: #fff;
+            font-size: 2rem;
+            text-align: center;
+            margin: 0;
+        }
+
+        .saWord h3 {
+            font-family: '微軟正黑體';
+            color: #fff;
+            font-size: 1.5rem;
+            text-align: left;
+            margin: 55% auto 11%;
+            line-height: 3rem;
+            text-align: center;
+        }
+
+        .intrestGroup {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .saPic {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: calc(50% - 8rem);
+            left: calc(50% - 5rem);
+        }
+
+        .saPic figure {
+            margin: 0;
+            padding: 0;
+            width: 10rem;
+            height: 10rem;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+
+
+        .box2 {
+            width: 100%;
+            height: max-content;
+            background: url('images/bg12m.jpg') no-repeat center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .skillBarArea {
+            width: 90%;
+            height: 100%;
+            /* background: aqua; */
+            margin: 0 auto;
+            padding: 3% 0;
+        }
+
+        .bar {
+            position: relative;
+            width: 100%;
+            height: 2rem;
+            border-radius: 5px;
+            background: #b2e2e6;
+            margin: 18% auto;
+            text-align: center;
+            transition: .5s;
+        }
+
+        .box3 {
+            width: 100%;
+            height: max-content;
+            background: url(images/bg13.jpg) repeat-y center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .flowerweb,
+        .spdsweb {
+            width: 95%;
+            text-align: center;
+            margin: 2% auto;
+        }
+
+        .flowerweb figure,
+        .spdsweb figure {
+            width: 100%;
+            height: 10rem;
+            overflow: hidden;
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+
+        .flowerweb figure img,
+        .spdsweb figure img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .box3 h3 {
+            font-size: 1.2rem;
+            color: #232529;
+            font-family: '微軟正黑體';
+            padding: .5rem 0;
+        }
+
+        .apph3 {
+            font-size: 1.2rem;
+            color: #232529;
+            font-family: '微軟正黑體';
+            padding: .5rem 0;
+        }
+
+        .sadesignBox {
+            display: flex;
+            justify-content: space-evenly;
+            box-sizing: border-box;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            flex-wrap: wrap;
+            height: max-content;
+        }
+
+        .cards {
+            width: 100%;
+            text-align: center;
+        }
+
+        .cards figure {
+            width: 100%;
+            height: 10rem;
+            overflow: hidden;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            margin: 5% 0 1% 0;
+        }
+
+        .cards img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .cards2 {
+            width: 100%;
+            text-align: center;
+        }
+
+        .cards2 figure {
+            width: 100%;
+            height: 15rem;
+            overflow: hidden;
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cards2 img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .box4 {
+            width: 100%;
+            height: 100vh;
+            background: #001b22;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        #aboutContant figure {
+            position: absolute;
+            right: 28%;
+            width: 10rem;
+            height: 10rem;
+            /* overflow: hidden; */
+            margin-top: 63%;
+            animation-duration: 2s;
+        }
+
+        .contacntGroup {
+            display: flex;
+            flex-direction: column;
+            /* margin: 0 auto 0 6%; */
+            padding: 80% 0 0 0;
+        }
+
+        .contacntGroup figure {
+            width: 2.5rem;
+            height: 2.5rem;
+            overflow: hidden;
+            margin: 3%;
+        }
+
+        .contacntGroup h2 {
+            margin: 5%;
+            font-size: 1.2rem;
+            color: #fff;
+            font-family: '微軟正黑體';
+        }
+
+    }
 </style>
 
 <body>
@@ -603,17 +840,17 @@
                     </figure>
                     <h3>名片設計</h3>
                 </div>
-                <div class="cards">
+                <div class="cards2">
                     <figure>
                         <img src="images/home page.png" alt="">
                     </figure>
-                    <h3>APP畫面設計練習</h3>
+                    <h3 class="apph3">APP畫面設計練習</h3>
                 </div>
-                <div class="cards">
+                <div class="cards2">
                     <figure>
                         <img src="images/iPhone.png" alt="">
                     </figure>
-                    <h3>APP畫面設計練習</h3>
+                    <h3 class="apph3">APP畫面設計練習</h3>
                 </div>
             </div>
 
@@ -769,6 +1006,17 @@
         if (isMobile()) {
             showPercentTriangle.fadeIn();
             showPercent.fadeIn();
+            $(".preBar").each(function () {
+                var percent = $(this).siblings(".showPercent").text()
+
+                $(this).siblings(".showPercent").css("left", percent)
+                $(this).siblings(".showPercentTriangle").css("left", percent)
+            })
+            $(".preBar").each(function () {
+                var percent = $(this).siblings(".showPercent").text()
+                $(this).css("width", percent)
+
+            })
         }
 
         else {
@@ -881,10 +1129,10 @@
                     $(this).closest('#aboutContant').css({
                         'transform': 'rotate(-20deg)',
                         'position': 'absolute',
-                        'right': '17%',
+                        'right': '10%',
                         'width': '10.5rem',
                         'height': '10.5rem',
-                        'marginTop': '-19%',
+                        'marginTop': '-20%',
                     });
                     contacntGroup.fadeIn();
                     $(this).closest('figure').removeClass('animated');
