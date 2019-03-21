@@ -441,6 +441,25 @@
 
     /*---RWD---*/
     @media screen and (max-width:1024px) {
+        .box1 {
+            width: 100%;
+            height: 100vh;
+            background: #001b22 url('images/bg11.jpg') no-repeat center;
+            background-attachment: fixed;
+            background-size: contain;
+        }
+
+        .saPic {
+            width: auto;
+            height: auto;
+            display: none;
+            position: absolute;
+            top: calc(50% - 8rem);
+            left: calc(50% - 5rem);
+            overflow: hidden;
+            margin-top: 3%;
+        }
+
         .saWord h2 {
             font-family: 'Sofia-Regular';
             color: #fff;
@@ -461,6 +480,40 @@
         .intrestGroup {
             display: flex;
             padding-bottom: 10%;
+        }
+
+        .intrestGroup figure p {
+            font-family: '微軟正黑體';
+            font-size: 0.7rem;
+            color: #fff;
+            margin-top: 5%;
+            display: block;
+        }
+
+        #aboutContant figure {
+            position: absolute;
+            right: 28%;
+            width: 7rem;
+            height: 7rem;
+            /* overflow: hidden; */
+            margin-top: 63%;
+            animation-duration: 2s;
+        }
+
+        #aboutContant p {
+            color: #fff;
+            position: absolute;
+            /* top: 52%; */
+            left: 43%;
+            padding-top: 102%;
+            animation-duration: 2s;
+        }
+
+        .contacntGroup {
+            display: flex;
+            flex-direction: column;
+            /* margin: 0 auto 0 6%; */
+            padding: 58% 0 0 0;
         }
 
         .box2 {
@@ -860,54 +913,6 @@
             padding-top: 107%;
             animation-duration: 2s;
         }
-    }
-
-    @media screen and (max-width:1024px) {
-        .saPic {
-            width: auto;
-            height: auto;
-            display: block;
-            position: absolute;
-            top: calc(50% - 8rem);
-            left: calc(50% - 5rem);
-            overflow: hidden;
-            margin-top: 3%;
-        }
-
-        .intrestGroup figure p {
-            font-family: '微軟正黑體';
-            font-size: 0.7rem;
-            color: #fff;
-            margin-top: 5%;
-            display: block;
-        }
-
-        #aboutContant figure {
-            position: absolute;
-            right: 28%;
-            width: 7rem;
-            height: 7rem;
-            /* overflow: hidden; */
-            margin-top: 63%;
-            animation-duration: 2s;
-        }
-
-        #aboutContant p {
-            color: #fff;
-            position: absolute;
-            /* top: 52%; */
-            left: 43%;
-            padding-top: 102%;
-            animation-duration: 2s;
-        }
-
-        .contacntGroup {
-            display: flex;
-            flex-direction: column;
-            /* margin: 0 auto 0 6%; */
-            padding: 58% 0 0 0;
-        }
-
     }
 </style>
 
