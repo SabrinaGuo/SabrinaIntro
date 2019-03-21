@@ -1410,6 +1410,7 @@
 
         }
         if (isMobile()) {
+            var wdth = $(window).width();
             var contacntGroup = $('.contacntGroup');
             contacntGroup.hide();
 
@@ -1434,7 +1435,7 @@
 
                 )
             }
-            if (width <= 375) {
+            if (wdth <= 375) {
                 $('.teapot').on(
                     'click', function () {
                         $(this).closest('#aboutContant').css({
